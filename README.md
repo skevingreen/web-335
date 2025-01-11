@@ -1,2 +1,4 @@
-# web-335
-Code for NoSQL Course
+# WEB 335 Introduction to NoSQL
+## Contributors
+* Richard Krasso
+* Scott Green
