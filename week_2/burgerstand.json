@@ -1,0 +1,23 @@
+{
+  "customer":{
+    "_id":"1",
+    "firstName":"John",
+    "lastName":"Doe"
+  },
+  "burgers": [
+    {
+      "burger":{
+        "_id":"1",
+        "burgerName":"Hunger-Buster",
+        "price":"4.99"
+      }
+    },
+    {
+      "burger":{
+        "_id":"2",
+        "burgerName":"Belt-Buster",
+        "price":"5.99"
+      }
+    }
+  ]
+}
