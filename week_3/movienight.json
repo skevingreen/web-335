@@ -1,0 +1,35 @@
+{
+  "viewer":{
+    "id":"1",
+    "firstName":"Paul",
+    "lastName":"Stanley"
+  },
+  "movies": [
+    {
+      "movie":{
+        "_id":"101",
+        "movieName":"Night of the Living Creeps",
+        "genre":"Horror"
+      },
+      "rating":{
+        "_id":"1",
+        "ratingScore":"5",
+        "viewerId":"1",
+        "movieId":"101"
+      }
+    },
+    {
+      "movie":{
+        "_id":"102",
+        "movieName":"Moulin Rouge",
+        "genre":"Musical"
+      },
+      "rating":{
+        "_id":"2",
+        "ratingScore":"1",
+        "viewerId":"1",
+        "movieId":"102"
+      }
+    }
+  ]
+}
