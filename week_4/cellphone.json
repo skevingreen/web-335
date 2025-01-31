@@ -1,0 +1,41 @@
+{
+  "user":{
+    "_id":"1",
+    "firstName":"Ace",
+    "lastName":"Frehley"
+  },
+  "devices":[
+    {
+      "device":{
+        "_id":"101",
+        "deviceName":"iPhone 12",
+        "deviceType":"Apple",
+        "charger_id":"1001"
+      }
+    },
+    {
+      "device":{
+        "_id":"102",
+        "deviceName":"Galaxy 21",
+        "deviceType":"Samsung",
+        "charger_id":"1002"
+      }
+    }
+  ],
+  "chargers":[
+    {
+      "charger":{
+        "_id":"1001",
+        "chargerType":"lightning",
+        "voltage":"5V"
+      }
+    },
+    {
+      "charger":{
+        "_id":"1002",
+        "chargerType":"micro-USB",
+        "voltage":"5V"
+      }
+    }
+  ]
+}
