@@ -1,0 +1,28 @@
+{
+    "customer":{
+        "_id":"1",
+        "firstName":"Joan",
+        "lastName":"Jett",
+        "customerId":"c0001"
+    },
+    "wishlist":[
+        {
+            "book":{
+                "_id":"1001",
+                "title":"It",
+                "genre":"Horror",
+                "author":"Stephen King",
+                "bookId":"b0001"
+            }
+        },
+        {
+            "book":{
+                "_id":"1002",
+                "title":"The Shining",
+                "genre":"Horror",
+                "author":"Stephen King",
+                "bookId":"b0002"
+            }
+        }
+    ]
+}
