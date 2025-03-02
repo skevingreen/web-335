@@ -1,28 +1,23 @@
 {
-    "customer":{
-        "_id":"1",
-        "firstName":"Joan",
-        "lastName":"Jett",
-        "customerId":"c0001"
-    },
-    "wishlist":[
-        {
-            "book":{
-                "_id":"1001",
-                "title":"It",
-                "genre":"Horror",
-                "author":"Stephen King",
-                "bookId":"b0001"
-            }
-        },
-        {
-            "book":{
-                "_id":"1002",
-                "title":"The Shining",
-                "genre":"Horror",
-                "author":"Stephen King",
-                "bookId":"b0002"
-            }
-        }
-    ]
+  "books":{
+    "_id":"book-101",
+    "bookId": 101,
+    "title":"Prince of Lies",
+    "author":"James Lowder",
+    "genre":"Fantasy"
+  },
+
+  "customers":{
+    "_id":"cust-201",
+    "customerId":201,
+    "firstName": "Robert",
+    "lastName":"King"
+  },
+
+  "wishlistItems":{
+    "_id":"wish-301",
+    "wishlistId":301,
+    "customerId":201,
+    "bookId":101
+  }
 }
