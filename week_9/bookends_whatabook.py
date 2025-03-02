@@ -42,18 +42,20 @@ def get_genres():
   genres = db.books.distinct("genre")
   return genres
 
-# display list of genres
 def list_genres():
   genre_list = get_genres()
+  i = 1
   for genre in genre_list:
-    print(genre)
+    print(str(i) + ") " + genre)
+    i += 1
   print("")
+  return genre_list
 
 # https://pynative.com/python-check-user-input-is-number-or-string/
 # validate that customer_id is an integer
-def validate_customerId(customer_id):
+def validate_integer(customer_id):
   try:
-    val = int(customer_id)
+    int(customer_id)
     return True
   except:
     return False
@@ -61,7 +63,7 @@ def validate_customerId(customer_id):
 # print the wishlist for given customerId
 # https://www.mongodb.com/developer/languages/python/python-quickstart-aggregation/
 def list_wishlist(customer_id):
-  if (validate_customerId(customer_id)):
+  if (validate_integer(customer_id)):
     pipeline = [
       {
         "$match": {
@@ -112,10 +114,14 @@ while (True):
   elif (selection == "1"):
     list_all_books()
   elif (selection == "2"):
-    list_genres()
-    type = input("Enter a genre: ")
+    genre_list = list_genres()
+    type = "NaN"
+    while(validate_integer(type) != True):
+      type = input("Enter a genre number or q to quit: ")
+      if (type == "q"):
+        sys.exit()
     print("")
-    list_books_by_genre(type)
+    list_books_by_genre(genre_list[int(type) - 1])
   elif (selection == "3"):
     customer_id = input("Enter customerId: ")
     print("")
